@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.phonegap.plugins.facebookconnect"
-    version="0.4.0">
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.hello-world"
+        version   = "3.0.0">
+    <name>  Web sql</name>
 
-    <name>Web SQL</name>
-    
     <description>
-    
-		Web
+        Web sql
     </description>
-    
-    <license>Apache 2.0</license>
-       
-    
-    
-    <!-- android -->
-    <platform name="android">
-         
-  
-         
-    </platform>
-    
-</plugin>
+
+    <author href="http://www.projectmaker.com.br" email="alfredo@projectmaker.com.br">
+     Project Maker
+    </author>
+	 
+	 
+	<gap:plugin name="org.apache.cordova.dialogs"   />
+
+
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+    <preference name="phonegap-version" value="3.0.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <icon src="icon.png" />
+	<access origin="*"/>
+</widget>
